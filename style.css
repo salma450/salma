@@ -1,0 +1,49 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    margin: 20px auto;
+    max-width: 300px;
+}
+
+.cell {
+    width: 100%;
+    padding: 20px;
+    font-size: 2rem;
+    background-color: #fff;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.reset {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.status {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
